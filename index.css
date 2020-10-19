@@ -1,7 +1,25 @@
-nav{
-    display: none;
+header {
+    background-color: rgb(99, 99, 99);
 }
 
-#hamburger-menu:checked ~ nav {
-    display: block;
+nav {
+    background-color: rgb(83, 117, 180);
 }
+
+
+p {
+    background-color: rgb(243, 179, 105);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    /* grid-column gap: 1em;
+    grid-row-gap: 1em; 
+    kan bruker Px % men anbefaler Fr
+    */
+
+    grid-auto-columns: minmax(100px, auto);
+}
+
