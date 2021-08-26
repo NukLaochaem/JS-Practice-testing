@@ -3,17 +3,17 @@ var orangeButton = document.querySelector(".orange");
 var pinkButton = document.querySelector(".pink");
 
 function changeBackground(colour) {
-    document.body.style.backgroundColor = colour;
+  document.body.style.backgroundColor = colour;
 }
 
 redButton.onclick = function () {
-    changeBackground("red");
+  changeBackground("red");
 };
 
 orangeButton.onclick = function () {
-    changeBackground("orange");
+  changeBackground("orange");
 };
 
 pinkButton.onclick = function () {
-    changeBackground("pink");
+  changeBackground("pink");
 };
