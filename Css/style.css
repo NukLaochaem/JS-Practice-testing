@@ -1,25 +1,161 @@
-header {
-    background-color: rgb(99, 99, 99);
+* {
+  box-sizing: border-box;
 }
 
-nav {
-    background-color: rgb(83, 117, 180);
+html,
+body {
+  height: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  margin: 0;
+}
 
-p {
-    background-color: rgb(243, 179, 105);
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.container-flex, nav .container, footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1em;
-    /* grid-column gap: 1em;
-    grid-row-gap: 1em; 
-    kan bruker Px % men anbefaler Fr
-    */
-
-    grid-auto-columns: minmax(100px, auto);
+  display: flex;
 }
 
+.grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  background: white;
+}
+
+nav .container {
+  justify-content: start;
+}
+
+nav .logo {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 1rem;
+}
+
+nav li {
+  margin-left: 1.5rem;
+}
+
+nav a {
+  color: #000022;
+  text-decoration: none;
+}
+
+nav a.active {
+  padding: 0.4rem 0.4rem 0.1rem;
+  border-bottom: 4px solid #059f81;
+}
+
+.circle {
+  background: white;
+  border-radius: 100%;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+  width: 39px;
+  height: 39px;
+  border: 3px solid transparent;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.circle.one {
+  width: 116px;
+  height: 116px;
+  border-color: #e28413;
+}
+
+.circle.two {
+  width: 200px;
+  height: 200px;
+  border-color: #059f81;
+}
+
+.circle.three {
+  width: 268px;
+  height: 268px;
+  border-color: #000022;
+}
+
+.circle-container {
+  margin-top: 2.3rem;
+}
+
+.circle-container div {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #059f81;
+  flex-shrink: 0;
+  color: white;
+  padding: 1.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+footer .container {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  footer .container {
+    flex-direction: row;
+  }
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #000022;
+}
+
+footer input {
+  border: none;
+  height: 25px;
+  padding: 0.3em;
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+  footer input {
+    width: 225px;
+  }
+}
+
+footer button {
+  background: #036e59;
+  border: none;
+  color: white;
+  width: 100px;
+  height: 25px;
+}
+/*# sourceMappingURL=style.css.map */

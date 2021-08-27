@@ -1,0 +1,28 @@
+nav {
+  background: white;
+  .container {
+    @extend .container-flex;
+    justify-content: start;
+  }
+  .logo {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 1rem;
+  }
+  li {
+    margin-left: 1.5rem;
+  }
+  a {
+    color: $primaryColor;
+    text-decoration: none;
+  }
+  a.active {
+    padding: 0.4rem 0.4rem 0.1rem;
+    border-bottom: 4px solid $secondary;
+  }
+}

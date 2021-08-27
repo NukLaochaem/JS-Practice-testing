@@ -1,0 +1,40 @@
+footer {
+  background-color: $secondary;
+  flex-shrink: 0;
+  color: white;
+  padding: 1.5rem 1rem;
+  font-size: 0.8rem;
+
+  .container {
+    @extend .container-flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $primaryColor;
+  }
+  input {
+    border: none;
+    height: 25px;
+    padding: 0.3em;
+    width: 150px;
+
+    @media (min-width: $tablet-width) {
+      width: 225px;
+    }
+  }
+  button {
+    background: darken($secondary, 10%);
+    border: none;
+    color: white;
+    width: 100px;
+    height: 25px;
+  }
+}

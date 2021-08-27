@@ -1,0 +1,40 @@
+@mixin circleSize($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+.circle {
+  background: white;
+  border-radius: 100%;
+  box-shadow: $box-shadow;
+  width: 39px;
+  height: 39px;
+  border: 3px solid transparent;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+
+  &.one {
+    @include circleSize(116px, 116px);
+    border-color: $accent;
+  }
+  &.two {
+    @include circleSize(200px, 200px);
+    border-color: $secondary;
+  }
+  &.three {
+    @include circleSize(268px, 268px);
+    border-color: $primaryColor;
+  }
+}
+
+.circle-container {
+  margin-top: 2.3rem;
+
+  div {
+    margin-bottom: 2rem;
+  }
+}
